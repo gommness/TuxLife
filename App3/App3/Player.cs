@@ -43,6 +43,10 @@ namespace App2.classes
                     force = 0;
                 }
             }
+            if(world.checkCollisionWithGoal(this) != null)
+            {
+                throw new GoalException();
+            }
             Tuple<double, double> tupla;
             tupla = this.world.checkCollisionWithActors(this);
             if (tupla != null)

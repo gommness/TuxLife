@@ -1,8 +1,10 @@
-﻿using System;
+﻿using App2;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TuxLife;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,12 +27,16 @@ namespace App3
         public SeleccionMundo1()
         {
             this.InitializeComponent();
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(Level1_1), null);
+            if (World.currentLevel > 5 || World.currentLevel < 1)
+            {
+                World.currentLevel = 1;
+            }
+            World.refreshScreen();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

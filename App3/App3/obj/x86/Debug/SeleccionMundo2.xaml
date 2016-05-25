@@ -22,6 +22,11 @@
                 <ImageBrush Stretch="Fill" ImageSource="Assets/coolArrowRight2.png"/>
             </Button.Background>
         </Button>
+        <Button x:ConnectionId='4' x:Name="button2" Content="SELECT" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="496,0,501,58" Height="109" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Segoe Print" FontSize="24" FontWeight="Bold"                      >
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/backsand.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

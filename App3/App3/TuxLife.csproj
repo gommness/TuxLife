@@ -98,9 +98,38 @@
     <Compile Include="Floor.cs" />
     <Compile Include="FlyingEnemy.cs" />
     <Compile Include="Goal.cs" />
+    <Compile Include="GoalException.cs" />
+    <Compile Include="Level1_1.xaml.cs">
+      <DependentUpon>Level1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level1_2.xaml.cs">
+      <DependentUpon>Level1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level1_3.xaml.cs">
+      <DependentUpon>Level1_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level1_5.xaml.cs">
+      <DependentUpon>Level1_5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level2_1.xaml.cs">
+      <DependentUpon>Level2_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level2_2.xaml.cs">
+      <DependentUpon>Level2_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level2_3.xaml.cs">
+      <DependentUpon>Level2_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level2_4.xaml.cs">
+      <DependentUpon>Level2_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Level2_5.xaml.cs">
+      <DependentUpon>Level2_5.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LevelTemplate.xaml.cs">
       <DependentUpon>LevelTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Music.cs" />
     <Compile Include="scorePage.xaml.cs" />
     <Compile Include="World.cs" />
     <None Include="project.json" />
@@ -121,8 +150,8 @@
     <Compile Include="StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level1_1.xaml.cs">
-      <DependentUpon>Level1_1.xaml</DependentUpon>
+    <Compile Include="Level1_4.xaml.cs">
+      <DependentUpon>Level1_4.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +186,7 @@
     <Content Include="Assets\octopus_cute_green.png" />
     <Content Include="Assets\platform.png" />
     <Content Include="Assets\platform2.png" />
+    <Content Include="Assets\playa.jpg" />
     <Content Include="Assets\sangre.png" />
     <Content Include="Assets\Sebastian.gif" />
     <Content Include="Assets\Sebastian2.gif" />
@@ -177,6 +207,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Level1_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level1_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level1_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level1_5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level2_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level2_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level2_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level2_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Level2_5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LevelTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,7 +267,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level1_1.xaml">
+    <Page Include="Level1_4.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

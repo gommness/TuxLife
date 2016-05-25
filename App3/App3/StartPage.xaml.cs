@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TuxLife;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,13 +24,17 @@ namespace App3
     /// </summary>
     public sealed partial class StartPage : Page
     {
+
+
         public StartPage()
         {
             this.InitializeComponent();
         }
 
+        
+
         private void startButton_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(SeleccionMundo1), null);
         }

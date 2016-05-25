@@ -1,8 +1,10 @@
-﻿using System;
+﻿using App2;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TuxLife;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -34,8 +36,7 @@ namespace App3
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(Level1_1), null);
+            World.refreshScreen();
         }
     }
 }

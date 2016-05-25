@@ -17,36 +17,45 @@
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="TuxLife.LevelTemplate" />
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="Stretch" />
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Width" />
       <RootProperty Name="CharacterSpacing" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="TuxLife.Level1_1" />
+    <RootType FullName="TuxLife.Level1_2" />
+    <RootType FullName="TuxLife.Level1_3" />
+    <RootType FullName="TuxLife.Level1_5" />
+    <RootType FullName="TuxLife.Level2_1" />
+    <RootType FullName="TuxLife.Level2_2" />
+    <RootType FullName="TuxLife.Level2_3" />
+    <RootType FullName="TuxLife.Level2_4" />
+    <RootType FullName="TuxLife.Level2_5" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="TuxLife.LevelTemplate" />
     <RootType FullName="App3.Pause" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="App3.ScorePage" />
@@ -56,6 +65,6 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="App3.StartPage" />
-    <RootType FullName="App3.Level1_1" />
+    <RootType FullName="App3.Level1_4" />
   </Roots.RootTypes>
 </Roots>

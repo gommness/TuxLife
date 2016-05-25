@@ -1,0 +1,32 @@
+﻿<Page x:Name="page"
+    x:Class="App3.Level1_4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="borders" >
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/fondomarino.jpg"/>
+        </Grid.Background>
+
+        <Image x:Name="player" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="70" Source="Assets/jugador.png" Margin="10,572,0,0"/>
+        <Image x:Name="floor" HorizontalAlignment="Left" Height="43" Margin="0,677,0,0" VerticalAlignment="Top" Width="129" Source="Assets/platform.png"/>
+        <Image x:Name="floor_Copy" HorizontalAlignment="Left" Height="43" Margin="217,542,0,0" VerticalAlignment="Top" Width="129" Source="Assets/platform.png"/>
+        <Image x:Name="floor_Copy1" HorizontalAlignment="Left" Height="43" Margin="497,515,0,0" VerticalAlignment="Top" Width="129" Source="Assets/platform.png"/>
+        <Image x:Name="Malo" HorizontalAlignment="Left" Height="70" Margin="497,396,0,0" VerticalAlignment="Top" Width="74" Source="Assets/octopus_cute_green.png"/>
+        <Image x:Name="Malo_Copy" HorizontalAlignment="Left" Height="70" Margin="272,396,0,0" VerticalAlignment="Top" Width="74" Source="Assets/octopus_cute_green.png"/>
+        <Image x:Name="floor_Copy2" HorizontalAlignment="Left" Height="43" Margin="729,389,0,0" VerticalAlignment="Top" Width="129" Source="Assets/platform.png"/>
+        <Image x:Name="floor_Copy3" HorizontalAlignment="Left" Height="43" Margin="1029,471,0,0" VerticalAlignment="Top" Width="129" Source="Assets/platform.png"/>
+        <Image x:Name="Malo_Copy2" HorizontalAlignment="Left" Height="70" Margin="784,262,0,0" VerticalAlignment="Top" Width="74" Source="Assets/octopus_cute_green.png"/>
+        <Image x:Name="Malo_Copy3" HorizontalAlignment="Left" Height="70" Margin="1067,262,0,0" VerticalAlignment="Top" Width="74" Source="Assets/octopus_cute_green.png"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Click="button_Click" Width="57" Height="61">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/coolPause1.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="goal" HorizontalAlignment="Left" Height="70" Margin="1067,396,0,0" VerticalAlignment="Top" Width="74" Source="Assets/goal.png"/>
+    </Grid>
+</Page>

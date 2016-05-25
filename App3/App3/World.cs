@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TuxLife;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -12,6 +13,7 @@ namespace App2
 {
     public class World
     {
+        public static int currentLevel;
         private Grid grid;
         private LinkedList<Actor> actors = new LinkedList<Actor>();
         private LinkedList<Floor> floors = new LinkedList<Floor>();
@@ -96,6 +98,58 @@ namespace App2
                 if (a.getX() == x && a.getY() == y && a != notMe)
                     return a;
             return null;
+        }
+
+        public  static void refreshScreen()
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            switch (World.currentLevel)
+            {
+                case 1:
+                    rootFrame.Navigate(typeof(Level1_1), null);
+                    break;
+                case 2:
+                    rootFrame.Navigate(typeof(Level1_2), null);
+                    break;
+                case 3:
+                    rootFrame.Navigate(typeof(Level1_3), null);
+                    break;
+                case 4:
+                    rootFrame.Navigate(typeof(Level1_4), null);
+                    break;
+                case 5:
+                    rootFrame.Navigate(typeof(Level1_5), null);
+                    break;
+                case 6:
+                    rootFrame.Navigate(typeof(Level2_1), null);
+                    break;
+                case 7:
+                    rootFrame.Navigate(typeof(Level2_2), null);
+                    break;
+                case 8:
+                    rootFrame.Navigate(typeof(Level2_3), null);
+                    break;
+                case 9:
+                    rootFrame.Navigate(typeof(Level2_4), null);
+                    break;
+                case 10:
+                    rootFrame.Navigate(typeof(Level2_5), null);
+                    break;
+                default:
+                    Musicplay();
+                    rootFrame.Navigate(typeof(Level1_1), null);
+                    break;
+            }
+        }
+        private async static void Musicplay()
+        {
+            await Music.playMusic();
+        }
+
+        public static void updateLevel()
+        {
+            currentLevel++;
+            refreshScreen();
         }
     }
 }

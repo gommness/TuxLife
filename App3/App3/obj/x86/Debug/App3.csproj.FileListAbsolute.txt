@@ -411,24 +411,3 @@ C:\Users\Jesús Miguel Álvarez\Documents\Visual Studio 2015\Projects\App3\App3\
 C:\Users\Jesús Miguel Álvarez\Documents\Visual Studio 2015\Projects\App3\App3\bin\x86\Debug\Core\TuxLife.exe
 C:\Users\Jesús Miguel Álvarez\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\TuxLife.exe
 C:\Users\Jesús Miguel Álvarez\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\TuxLife.pdb
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App3.csprojResolveAssemblyReference.cache
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App.g.i.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App.g.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\Level1_1.g.i.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\Level1_1.g.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\ScorePage.g.i.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\ScorePage.g.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\MainPage.g.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App.xaml
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\Level1_1.xaml
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\ScorePage.xaml
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\MainPage.xaml
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App.xbf
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\Level1_1.xbf
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\ScorePage.xbf
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\MainPage.xbf
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\XamlSaveStateFile.xml
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App3.exe
-C:\Users\javie_000\Documents\Visual Studio 2015\Projects\App3\App3\obj\x86\Debug\App3.pdb

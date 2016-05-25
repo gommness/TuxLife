@@ -1,16 +1,14 @@
 ﻿using App2;
 using App2.classes;
+using App3;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
-using TuxLife;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Storage;
-using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -19,21 +17,20 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace App3
+namespace TuxLife
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class Level1_1 : Page
     {
-       
         private Player ply;
         private World world;
         DispatcherTimer dtClock;
 
-        public Level1_1() : base()
+        public Level1_1()
         {
             this.InitializeComponent();
             dtClock = new DispatcherTimer();
@@ -46,17 +43,17 @@ namespace App3
             /*Propio de cada level*/
             world = new World(borders);
             world.addFloor(new Floor(floor, world));
-            world.addFloor(new Floor(floor_Copy, world));
-            world.addFloor(new Floor(floor_Copy1, world));
-            world.addFloor(new Floor(floor_Copy2, world));
-            world.addFloor(new Floor(floor_Copy3, world));
+            world.addFloor(new Floor(floor_copy, world));
+            world.addFloor(new Floor(floor_copy1, world));
+            world.addFloor(new Floor(floor_copy2, world));
+            world.addFloor(new Floor(floor_copy3, world));
+            world.addFloor(new Floor(floor_copy4, world));
+            world.addFloor(new Floor(floor_copy5, world));
+            world.addFloor(new Floor(floor_copy6, world));
+            world.addFloor(new Floor(floor_copy7, world));
+            world.addFloor(new Floor(floor_copy8, world));
             ply = new Player(player, world);
             world.addActor(ply);
-            world.addActor(new Enemy(Malo, world));
-            world.addActor(new Enemy(Malo_Copy, world));
-            world.addActor(new Enemy(Malo_Copy1, world));
-            world.addActor(new Enemy(Malo_Copy2, world));
-            world.addActor(new Enemy(Malo_Copy3, world));
             new Goal(goal, world);
         }
 
@@ -74,12 +71,19 @@ namespace App3
             {
                 world.update();
             }
+            catch(GoalException gex)
+            {
+                dtClock.Stop();
+                World.updateLevel();
+                return;
+            }
             catch (DieException exc)
             {
                 dtClock.Stop();
                 await Task.Delay(1000);
                 Frame rootFrame = Window.Current.Content as Frame;
                 rootFrame.Navigate(typeof(ScorePage), null);
+                return;
             }
             if (ply.getY() > this.ActualHeight)
             {
