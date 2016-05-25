@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App3.SeleccionMundo1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="mundo1">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/fondomarino.jpg"/>
+        </Grid.Background>
+        <Image x:ConnectionId='2' x:Name="image" Margin="370,64,372,374" Source="Assets/coolWorld1.png"/>
+        <Button x:ConnectionId='3' x:Name="button" Content="SELECT" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="550,0,556,93"                      Height="89" FontFamily="Impact" FontSize="48" Foreground="Black" BorderBrush="Red">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/buttonWater.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:ConnectionId='4' x:Name="button1" Content="" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0,314,50,279" BorderBrush="{x:Null}" Foreground="{x:Null}"                       Width="97">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/coolArrow1.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
+

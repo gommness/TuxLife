@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="App3.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="back">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="129*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/backpolonorte.jpg"/>
+        </Grid.Background>
+        <Image x:ConnectionId='2' x:Name="image" Source="Assets/thug_tux.png" Margin="-104,-155,-192,-268" Grid.ColumnSpan="2"/>
+        <Image x:ConnectionId='3' x:Name="image1" Margin="366,67,367,0" Source="Assets/cooltext.png" Grid.ColumnSpan="2" Height="140" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='4' x:Name="startButton" Content="START" HorizontalAlignment="Stretch" Margin="513,0,513,121" VerticalAlignment="Bottom" BorderBrush="Black" Foreground="Black" FontSize="36" FontWeight="Bold" FontFamily="Georgia" CharacterSpacing="10"                           Height="95" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/backice.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image x:ConnectionId='5' x:Name="image2" Grid.Column="1" Height="52" Margin="254.333,0,5,10" VerticalAlignment="Bottom" Source="Assets/hackathon logo.png"/>
+
+    </Grid>
+</Page>
+
